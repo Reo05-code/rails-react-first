@@ -1,0 +1,15 @@
+current directory: /home/ataik/workspace/.bundle/ruby/3.1.0/gems/cgi-0.5.0/ext/cgi/escape
+/home/ataik/.rbenv/versions/3.1.4/bin/ruby -I /home/ataik/.rbenv/versions/3.1.4/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /home/ataik/workspace/.bundle/ruby/3.1.0/gems/cgi-0.5.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20251031-211599-7l52qi sitelibdir\=./.gem.20251031-211599-7l52qi clean
+
+current directory: /home/ataik/workspace/.bundle/ruby/3.1.0/gems/cgi-0.5.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20251031-211599-7l52qi sitelibdir\=./.gem.20251031-211599-7l52qi
+compiling escape.c
+linking shared-object cgi/escape.so
+
+current directory: /home/ataik/workspace/.bundle/ruby/3.1.0/gems/cgi-0.5.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20251031-211599-7l52qi sitelibdir\=./.gem.20251031-211599-7l52qi install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20251031-211599-7l52qi/cgi
