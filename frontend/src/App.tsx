@@ -29,11 +29,20 @@ const App = () => {
     fetchTodos();
   }, []);
 
+   // Todo削除後、削除されたTodoを除いたTodoリストを表示する関数
+  const handleTodoDelete = async (todoId: number) => {
+    try {
+      setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== todoId));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
-    <div>
-      <h1>ToDo App</h1>
+    <div className="container">
+      <h1>ToDo List</h1>
       <TodoForm />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} onTodoDelete={handleTodoDelete} />
     </div>
   );
 };
